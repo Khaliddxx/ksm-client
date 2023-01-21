@@ -1,0 +1,27 @@
+.projectDetails-page {
+  width: 60%;
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project-img {
+    width: 855px;
+    height: 475px !important;
+    object-fit: cover;
+    background: #585858;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-bottom: 48px;
+  }
+  .hero-title,
+  p {
+    text-align: left !important;
+  }
+  .flex-2 {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+}

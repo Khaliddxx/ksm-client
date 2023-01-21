@@ -1,0 +1,144 @@
+.certificates-page {
+  background: #f8f1d9;
+
+  padding-bottom: 200px;
+
+  .header {
+    height: 250px;
+    background: linear-gradient(
+      0deg,
+      rgba(18, 20, 52, 0.43),
+      rgba(18, 20, 52, 0.43)
+    );
+
+    background-image: url("../../Assets/Headers/Certificates.png");
+
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  .header-text {
+    font-family: "Reem Kufi";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 76px;
+
+    color: #ffffff;
+
+    position: absolute;
+    bottom: 25px;
+    left: 93px;
+    text-transform: uppercase;
+  }
+
+  .aboutPageMain {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      box-sizing: border-box;
+      border-radius: 20px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    body {
+      background: #000;
+      color: #000;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 500px;
+      width: 100%;
+    }
+
+    .mySwiper {
+      position: relative;
+      width: 35%;
+      box-sizing: border-box;
+    }
+
+    .mySwiper {
+      // width: 35%;
+      // height: 100%;
+      // opacity: 0.4;
+      height: 500px;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 90%;
+      // height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #121434;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .certificates-page {
+    .aboutPageMain {
+      .mySwiper2 {
+        height: 250px;
+      }
+
+      .mySwiper {
+        display: none;
+      }
+    }
+  }
+}

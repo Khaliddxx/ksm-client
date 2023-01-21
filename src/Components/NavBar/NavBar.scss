@@ -1,0 +1,261 @@
+.navbar {
+  z-index: 100;
+  padding: 0;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 0;
+  height: 120px;
+
+  top: 0px;
+  position: sticky;
+}
+
+.navbarWithBg {
+  .nav-item:hover,
+  .nav-item .navbar-nav:focus,
+  #navbarScrollingDropdown:hover,
+  #navbarScrollingDropdown:focus,
+  #navbarScrollingDropdownWhite:hover,
+  #navbarScrollingDropdownWhite:focus {
+    // background-color: white !important;
+    // color: rgba(27, 80, 166, 1) !important;
+    border-bottom: 4px solid #ddb942;
+    color: white;
+  }
+  //   background: linear-gradient(
+  //     90deg,
+  //     rgba(27, 80, 166, 1) 0%,
+  //     rgba(24, 98, 184, 1) 25%,
+  //     rgba(71, 38, 134, 1) 75%
+  //   );
+  background: #121434;
+
+  .nav-item {
+    color: white;
+
+    transition: background-color 0.5s ease-out 100ms;
+  }
+
+  #navbarScrollingDropdown {
+    color: white;
+    // border-radius: 8px;
+    transition: background-color 0.5s ease-out 100ms;
+  }
+  #navbarScrollingDropdownWhite {
+    color: white;
+    // border-radius: 8px;
+    transition: background-color 0.5s ease-out 100ms;
+  }
+
+  .login-btn {
+    border: 1px solid #55c9f3;
+
+    p {
+      color: #55c9f3;
+    }
+  }
+
+  .signup-btn {
+    background-color: #55c9f3;
+    color: #1d015c;
+  }
+}
+
+.navbarWithOutBg {
+  .nav-item:hover,
+  .nav-item .navbar-nav:focus,
+  #navbarScrollingDropdown:hover,
+  #navbarScrollingDropdown:focus,
+  #navbarScrollingDropdownWhite:hover,
+  #navbarScrollingDropdownWhite:focus {
+    border-bottom: 4px solid #ddb942;
+    color: white;
+  }
+  .nav-item-Blue {
+    color: #3e1893 !important;
+    // border-radius: 8px;
+  }
+  .nav-item-White {
+    color: white !important;
+    // border-radius: 8px;
+  }
+
+  #navbarScrollingDropdown {
+    color: #3e1893;
+    // border-radius: 8px;
+  }
+  #navbarScrollingDropdownWhite {
+    color: white;
+    // border-radius: 8px;
+  }
+
+  .login-btn {
+    border: 1px solid #3e1893;
+
+    p {
+    }
+  }
+
+  .signup-btn {
+    background-color: #3e1893;
+    color: white;
+  }
+}
+
+.iads-logo {
+  height: 103px;
+}
+
+.nav-items {
+  width: 73%;
+  margin: auto;
+  font-family: "Reem Kufi", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.nav-item {
+  padding: 0;
+  font-family: "Reem Kufi", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px !important;
+  line-height: 27px;
+}
+
+.auth {
+  gap: 16px;
+  align-items: center;
+  p {
+    margin: 0px;
+  }
+}
+
+.signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 93px;
+  height: 32px;
+  border-radius: 100px;
+  margin-block: auto;
+  font-family: POPPINS regular;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 93px;
+  height: 32px;
+  flex-direction: row;
+  cursor: pointer;
+  border-radius: 100px;
+  margin-block: auto;
+
+  p {
+    margin: 0;
+    font-family: POPPINS regular;
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .navbar {
+    background: #121434;
+  }
+
+  .navbar-brand {
+    width: 50%;
+  }
+
+  .navbarWithOutBg {
+    .nav-item-Blue {
+      color: white !important;
+    }
+    .nav-item-White {
+      color: #121434 !important;
+    }
+
+    #navbarScrollingDropdown {
+      color: #121434;
+    }
+    #navbarScrollingDropdownWhite {
+      color: #121434;
+    }
+
+    .login-btn {
+      border: 1px solid #55c9f3;
+
+      p {
+        color: #55c9f3;
+      }
+    }
+
+    .signup-btn {
+      background-color: #55c9f3;
+      color: #1d015c;
+    }
+  }
+
+  .nav-items {
+    justify-content: center;
+    // padding-bottom: 50px !important;
+  }
+  .iads-logo {
+    height: 103px;
+    margin-left: 0px !important;
+  }
+
+  .navbar-toggler {
+    z-index: 1000;
+  }
+
+  .navbar-collapse {
+    // display: flex;
+    flex-direction: column;
+    // padding-bottom: 50px !important;
+    background-color: #121434;
+    margin-top: -1px;
+    margin-left: 0px;
+
+    // margin-bottom: 50px !important;
+  }
+
+  .auth {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    // background-color: transparent !important;
+    // border: none !important;
+    text-align: center !important;
+
+    .dropdown-item {
+      // color: white;
+    }
+
+    .dropdown-item:active,
+    .dropdown-item:hover {
+      // background-color: transparent;
+    }
+  }
+}

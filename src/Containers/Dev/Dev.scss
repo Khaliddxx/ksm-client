@@ -1,0 +1,14 @@
+.dev-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .dev-page {
+    h1 {
+      font-size: 25px;
+    }
+  }
+}
