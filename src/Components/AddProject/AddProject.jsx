@@ -93,6 +93,9 @@ const AddProject = () => {
   //   console.log(errors);
   return (
     <div className="addproject">
+      <p style={{ display: "none", textAlign: "left" }}>
+        Please use a pc or a laptop
+      </p>
       <form className="addform" onSubmit={handleSubmit(onSubmit)}>
         <label>Project Name*</label>
         <input

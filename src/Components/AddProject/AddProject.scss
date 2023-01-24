@@ -71,3 +71,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .addproject {
+    .addform {
+      width: 95vw;
+      input,
+      textarea,
+      select {
+        width: auto;
+      }
+    }
+    p {
+      // display: block !important;
+    }
+  }
+}

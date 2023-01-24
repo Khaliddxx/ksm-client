@@ -1,5 +1,5 @@
 .projects-page {
-  background: #f8f1d9;
+  background: #f8f6f2;
 
   padding-bottom: 200px;
 
@@ -30,5 +30,26 @@
     bottom: 25px;
     left: 93px;
     text-transform: uppercase;
+  }
+
+  .loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .body-text {
+    /* Body L */
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 32px;
+    font-size: 25px;
+
+    text-align: center;
+
+    color: #545454;
   }
 }

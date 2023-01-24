@@ -12,7 +12,10 @@ const Footer = () => {
           Street.
         </p>
       </div>
-      <p className="cp">© Copyright 2023 xDev . All Rights Reserved.</p>
+      <p className="cp">
+        © Designed & Developed by <a href="https://khalidxah.tech">xDev</a>{" "}
+        2023. All Rights Reserved.
+      </p>
     </div>
   );
 };

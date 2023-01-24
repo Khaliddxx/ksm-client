@@ -44,7 +44,7 @@ const Home = () => {
             alarms, and maintenance.{" "}
           </p>
           <a href="/projects">
-            <button className="cta">View Projects</button>
+            <button className="btn">View Projects</button>
           </a>
         </div>
       </div>
@@ -56,11 +56,24 @@ const Home = () => {
           range of disciplines. Using unique capabilities and advanced tools
           required for execution of complete constructions and contracts.
         </p>
-        <div className="photos">
-          <img src={wwd1} alt="" />
-          <img src={wwd2} alt="" />
-          <img src={wwd3} alt="" />
+        <div className=" photos">
+          <div className="wwd1">
+            <p className="body-text">Site Development & Construction</p>
+          </div>
+          <div className="wwd2">
+            <p className="body-text">
+              Solar Power <br /> Supply
+            </p>
+          </div>
+          <div className="wwd3">
+            <p className="body-text">
+              Electrical Setup <br /> Services
+            </p>
+          </div>
         </div>
+        <a href="/services" style={{ marginTop: "24px" }}>
+          <button className="btn">View All Categories</button>
+        </a>
       </div>
 
       <div className="ourservices">
@@ -88,10 +101,12 @@ const Home = () => {
             <button className="btn">View All Categories</button>
           </a>
         </div>
-        <div className="right slide-left">
+        <div className="right">
           <img src={scroll} alt="" />
         </div>
       </div>
+
+      <div className="strip"></div>
 
       <div className="clients">
         <div className="content">

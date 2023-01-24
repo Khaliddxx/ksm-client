@@ -11,7 +11,7 @@ const ProjectDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/projects/${pathname.split("/")[2]}`)
+      .get(`https://kssm.herokuapp.com/projects/${pathname.split("/")[2]}`)
       .then((res) => {
         setProject(res.data.project);
         console.log(project);
