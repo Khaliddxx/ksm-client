@@ -94,8 +94,9 @@
       .wwd1,
       .wwd2,
       .wwd3 {
-        width: 370px;
-        height: 300px;
+        // flex: 1 1 auto;
+        width: 350px;
+        height: 270px;
         border-radius: 32px;
         cursor: pointer;
         transition: ease-in 100ms;
@@ -273,6 +274,106 @@
     height: 1000px;
     width: 1000px;
   }
+
+  .contact-home {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 85%;
+    margin: auto;
+
+    .content {
+      // width: 80%;
+      // margin: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .cont {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .location {
+        display: flex;
+        padding: 69px 47px;
+        gap: 48px;
+        // width: 492px;
+        width: auto;
+        // height: 285px;
+        background: #101338;
+        box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        flex: none;
+        // order: 1;
+        // flex-grow: 1;
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          // line-height: 30px;
+          /* or 134% */
+
+          color: #ffffff;
+        }
+      }
+      .horiz {
+        display: flex;
+        justify-content: space-between;
+        .mail {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 30px 48px;
+          gap: 26px;
+          width: auto;
+          // height: 285px;
+          background: #101338;
+          box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+          border-radius: 20px;
+          // flex: none;
+          // order: 1;
+          // flex-grow: 0;
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+        .whatsapp {
+          img {
+            height: 200px;
+          }
+          padding: 10px 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 287px;
+          height: 285px;
+
+          background: #1bd741;
+          box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+          border-radius: 20px;
+          p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            text-align: center;
+            line-height: 26px;
+
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .hero-text {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -336,6 +437,34 @@
       // p {
       //   font-size: 20px !important;
       // }
+    }
+    .contact-home {
+      width: 95%;
+      .content {
+        .horiz {
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+        }
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        .location {
+          flex-direction: column;
+          align-items: center;
+          padding: 24px 24px;
+          width: 90vw;
+          img {
+            width: 96px;
+          }
+        }
+        .map {
+          iframe {
+            width: 90vw;
+          }
+          // margin: auto;
+        }
+      }
     }
   }
 }

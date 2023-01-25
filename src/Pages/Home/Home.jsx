@@ -2,9 +2,9 @@ import React from "react";
 import "./Home.scss";
 import Dev from "../../Containers/Dev/Dev";
 
-import wwd1 from "../../Assets/Home/wwd1.png";
-import wwd2 from "../../Assets/Home/wwd2.png";
-import wwd3 from "../../Assets/Home/wwd3.png";
+import pin from "../../Assets/Home/pin.svg";
+import mail from "../../Assets/Home/mail.svg";
+import wa from "../../Assets/Home/wa.svg";
 
 import scroll from "../../Assets/Home/scroll.png";
 
@@ -179,7 +179,53 @@ const Home = () => {
           height="100%"
         ></iframe>
       </div> */}
-      <Dev></Dev>
+      <div className="contact-home">
+        <h1 className="hero-text">Contact Us</h1>
+        <div className="content">
+          <div className="cont">
+            <div className="location">
+              <img src={pin} alt="" />
+              <div className="loc">
+                <p>
+                  Khartoum – Nassir Extension
+                  <br />
+                  Omak Street crosses Bashir Elnefedi
+                </p>
+              </div>
+            </div>
+            <div className="horiz">
+              <div className="mail">
+                <img src={mail} alt="" />
+                <div className="loc">
+                  <p>
+                    info@ksmsudan.com <br />
+                    ksmsudan72@gmail.com
+                  </p>
+                </div>
+              </div>
+              <a href="https://wa.me/249912301907" className="whatsapp">
+                <img src={wa} alt="" />
+                <p>
+                  Click to send
+                  <br />
+                  +249912301907
+                </p>
+              </a>
+            </div>
+          </div>
+          <div className="map">
+            <iframe
+              width="500"
+              height="595"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowfullscreen
+              src="https://www.google.com/maps/embed/v1/place?q=15.567618+32.578212&key=AIzaSyA2SaHwPFv2qYpapCSQytlVPL0-bpeYXrk"
+            />
+          </div>
+        </div>
+      </div>
+      {/* <Dev></Dev> */}
     </div>
   );
 };
