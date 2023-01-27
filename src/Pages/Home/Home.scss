@@ -295,23 +295,19 @@
         display: flex;
         padding: 69px 47px;
         gap: 48px;
-        // width: 492px;
         width: auto;
-        // height: 285px;
         background: #101338;
-        box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+        // box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: ease-in 100ms;
         border-radius: 20px;
         flex: none;
-        // order: 1;
-        // flex-grow: 1;
+
         p {
           font-family: "Montserrat";
           font-style: normal;
           font-weight: 400;
           font-size: 22px;
-          // line-height: 30px;
-          /* or 134% */
-
           color: #ffffff;
         }
       }
@@ -326,13 +322,10 @@
           padding: 30px 48px;
           gap: 26px;
           width: auto;
-          // height: 285px;
+
           background: #101338;
-          box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+          // box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
           border-radius: 20px;
-          // flex: none;
-          // order: 1;
-          // flex-grow: 0;
           p {
             font-family: "Montserrat";
             font-style: normal;
@@ -354,7 +347,9 @@
           height: 285px;
 
           background: #1bd741;
-          box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+          // box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.25);
+          cursor: pointer;
+          transition: ease-in 100ms;
           border-radius: 20px;
           p {
             font-family: "Montserrat";
@@ -367,6 +362,18 @@
             color: #ffffff;
           }
         }
+      }
+    }
+    .location:hover,
+    .mail:hover,
+    .whatsapp:hover {
+      transform: scale(1.05);
+      animation-duration: 1000ms;
+      box-shadow: 6px 7px 35px 3px rgba(0, 0, 0, 0.5);
+
+      p {
+        filter: blur(0px);
+        font-weight: 600;
       }
     }
     .hero-text {

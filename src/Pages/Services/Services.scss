@@ -33,14 +33,15 @@
 
   .list {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-items: center;
+    // align-items: center;
+    // flex-direction: column;
+    // align-items: center;
 
     .photos {
       display: flex;
       flex-direction: row;
       // justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       gap: 24px;
       margin-top: 64px;
@@ -80,7 +81,7 @@
       .wwd7,
       .wwd8 {
         padding: 0px 18px;
-        width: 302px;
+        width: 302px !important;
         height: 222px;
         border-radius: 32px;
         cursor: pointer;
@@ -169,14 +170,40 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .img-frame {
-    width: auto;
-    // height: auto;
+  .services-page {
+    .list {
+      overflow: hidden;
+      overflow-x: scroll;
+      .photos {
+        .img-frame {
+          // width: auto;
+          // height: auto;
+          border-radius: 20px;
+        }
+        // display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+
+        .wwd1,
+        .wwd2,
+        .wwd3,
+        .wwd4,
+        .wwd5,
+        .wwd6,
+        .wwd7,
+        .wwd8 {
+          border-radius: 20px !important;
+          width: 90% !important;
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 900px) {
   .img-frame {
-    width: auto;
+    // width: auto;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
